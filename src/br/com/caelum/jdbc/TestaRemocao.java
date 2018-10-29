@@ -13,7 +13,7 @@ public class TestaRemocao {
 		Connection connection = connectionPool.getConnection();
 		
 		Statement stmt = connection.createStatement();
-		boolean execute = stmt.execute("delete from Produto where id > 3");
+		boolean execute = stmt.execute("delete from Produto where id > 38");
 		System.out.println(execute);
 		int count = stmt.getUpdateCount();
 		
